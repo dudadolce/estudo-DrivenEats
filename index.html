@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esse é um projeto do Driven Eats">
+    <meta name="keywords" content="comida, fastfood, compras, almoço, em casa, delivery">
+    <meta name="author" content="Maria Eduarda">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="estilo.css" />
+
+    <title>DrivenEats Mobile</title>
+</head>
+
+<body>
+    <div class="container">
+
+
+
+        <div class="barra-topo">
+            <div class="texto-topo">
+                <h1>DrivenEats</h1>
+                <p class="slogan">Sua comida em 6 minutos</p>
+            </div>
+        </div>
+
+
+        <h2>Primeiro, seu prato</h2>
+        <div class="comidas">
+
+            <div class="caixa-comida" onclick="marcar(event)" id="bifeComFritas" data-category="prato">
+                <img class="img-produto" src="./imagens/comida/360_F_447677711_CUFrZcLPTuGhWts1jmSOToKkJJS97Cnr.jpg"
+                    alt="prato de comida 1">
+                <p class="text-produto">Bife com Fritas</p>
+                <p class="descricao-produto">Um pouco de batata e um bife</p>
+                <p class="valor">R$14,90</p>
+                <i class="check none"></i>
+            </div>
+
+
+            <div class="caixa-comida" onclick="marcar(event)" id="FrangoComSalada" data-category="prato">
+                <img class="img-produto"
+                    src="./imagens/comida/depositphotos_69724327-stock-photo-dish-with-meat-rice-and.jpg"
+                    alt="prato de comida 2">
+                <p class="text-produto">Frango com Salada</p>
+                <p class="descricao-produto">Um frango, um pouco de salada</p>
+                <p class="valor">R$14,90</p>
+                <i class="check none"></i>
+            </div>
+
+
+            <div class="caixa-comida" onclick="marcar(event)" id="2BifesComSalada" data-category="prato">
+                <img class="img-produto" src="./imagens/comida/din1135-sustenta5.jpg" alt="prato de comida 3">
+                <p class="text-produto">2 Bifes com Salada</p>
+                <p class="descricao-produto">Dois bifes e um pouco de salada</p>
+                <p class="valor">R$14,90</p>
+                <i class="check none"></i>
+            </div>
+
+            <div class="caixa-comida" onclick="marcar(event)" id="bifeComFritasSalada" data-category="prato">
+                <img class="img-produto" src="./imagens/comida/istockphoto-1265205988-612x612.jpg"
+                    alt="prato de comida 4">
+                <p class="text-produto">Bife com Fritas e Salada</p>
+                <p class="descricao-produto">Um pouco de batata, um pouco de salada</p>
+                <p class="valor">R$14,90</p>
+                <i class="check none"></i>
+            </div>
+
+            <div class="caixa-comida" onclick="marcar(event)" id="bifeComOvo" data-category="prato">
+                <img class="img-produto" src="./imagens/comida/istockphoto-1265206105-612x612.jpg"
+                    alt="prato de comida 5">
+                <p class="text-produto">Bife com Ovo</p>
+                <p class="descricao-produto">um bife e um ovo</p>
+                <p class="valor">R$14,90</p>
+                <i class="check none"></i>
+            </div>
+
+
+
+        </div>
+
+
+        <h2>Agora, sua bebida</h2>
+        <div class="bebidas">
+
+            <div class="caixa-comida" onclick="marcar(event)" id="cocaZero" data-category="bebida">
+                <img class="img-produto" src="./imagens/bebida/bebida 5.jpg" alt="bebida lata coca cola zero">
+                <p class="text-produto2">Coca Zero</p>
+                <p class="descricao-produto2">Lata 350ml</p>
+                <p class="valor2">R$4,90</p>
+                <i class="check none"></i>
+            </div>
+
+
+            <div class="caixa-comida" onclick="marcar(event)" id="cocaNormal" data-category="bebida">
+                <img class="img-produto" src="./imagens/bebida/bebida 4.jpg" alt="bebida lata coca cola normal">
+                <p class="text-produto2">Coca-Cola Normal</p>
+                <p class="descricao-produto2">Lata 350ml</p>
+                <p class="valor2">R$4,90</p>
+                <i class="check none"></i>
+            </div>
+
+
+            <div class="caixa-comida" onclick="marcar(event)" id="sprite" data-category="bebida">
+                <img class="img-produto" src="./imagens/bebida/bebida 1.jpg" alt="bebida lata sprite">
+                <p class="text-produto2">Sprite</p>
+                <p class="descricao-produto2">Lata 350ml</p>
+                <p class="valor2">R$4,90</p>
+                <i class="check none"></i>
+            </div>
+
+            <div class="caixa-comida" onclick="marcar(event)" id="fantaLaranja" data-category="bebida">
+                <img class="img-produto" src="./imagens/bebida/bebida 2.jpg" alt="bebida lata fanta laranja">
+                <p class="text-produto2">Fanta Laranja</p>
+                <p class="descricao-produto2">Lata 350ml</p>
+                <p class="valor2">R$4,90</p>
+                <i class="check none"></i>
+            </div>
+
+            <div class="caixa-comida" onclick="marcar(event)" id="fantaUva" data-category="bebida">
+                <img class="img-produto" src="./imagens/bebida/bebida 3.jpg" alt="Bebida lata fanta uva">
+                <p class="text-produto2">Fanta Uva</p>
+                <p class="descricao-produto2">Lata 350ml</p>
+                <p class="valor2">R$4,90</p>
+                <i class="check none"></i>
+            </div>
+
+        </div>
+
+
+        <h2>Agora, sua sobremesa</h2>
+        <div class="sobremesas">
+
+
+            <div class="caixa-comida" onclick="marcar(event)" id="pudim" data-category="sobremesa">
+                <img class="img-produto" src="./imagens/sobremesa/sobremesa 1.jpg" alt="sobremesa Pudim">
+                <p class="text-produto2">Pudim</p>
+                <p class="descricao-produto2">Delicioso Pudim</p>
+                <p class="valor2">R$8,90</p>
+                <i class="check none"></i>
+            </div>
+
+
+            <div class="caixa-comida" onclick="marcar(event)" id="doceDeLeite" data-category="sobremesa">
+                <img class="img-produto" src="./imagens/sobremesa/sobremesa 2.jpg" alt="sobremesa doce de leite">
+                <p class="text-produto2">Doce de Leite</p>
+                <p class="descricao-produto2">Doce de Leite caseiro</p>
+                <p class="valor2">R$8,90</p>
+                <i class="check none"></i>
+            </div>
+
+
+            <div class="caixa-comida" onclick="marcar(event)" id="petitGateau" data-category="sobremesa">
+                <img class="img-produto" src="./imagens/sobremesa/sobremesa 3.jpg"
+                    alt="Petit 1gateua com sorvete de creme">
+                <p class="text-produto">Petit Gateau c/ sorvete de creme</p>
+                <p class="descricao-produto">Petit Gateua especial da casa</p>
+                <p class="valor">R$8,90</p>
+                <i class="check none"></i>
+            </div>
+
+            <div class="caixa-comida" onclick="marcar(event)" id="Cheesecake" data-category="sobremesa">
+                <img class="img-produto" src="./imagens/sobremesa/sobremesa 4.jpg" alt="Cheesecake de morango">
+                <p class="text-produto">Cheesecake de Morango</p>
+                <p class="descricao-produto">Cheesecakecom calda de morango caseira</p>
+                <p class="valor">R$8,90</p>
+                <i class="check none"></i>
+            </div>
+
+            <div class="caixa-comida" onclick="marcar(event)" id="brigadeiro" data-category="sobremesa">
+                <img class="img-produto" src="./imagens/sobremesa/sobremesa 5.jpg" alt="seis Brigadeiros gourmet">
+                <p class="text-produto">6 Brigadeiros Goumert</p>
+                <p class="descricao-produto">Delicioso brigadeiro caseiro</p>
+                <p class="valor">R$8,90</p>
+                <i class="check none"></i>
+            </div>
+
+        </div>
+
+
+
+        <div class="barra-rodape">
+
+
+            <div class="botao" id="botaoCompra">
+                <p class="texto-botao-compra" id="textoBotao" onclick="marcar(event)">Selecione os 3 itens para
+                    fechar o pedido
+                </p>
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
